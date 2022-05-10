@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/chloelski/landing-page/issues"
   },
-  "homepage": "https://github.com/chloelski/landing-page#readme"
+  "homepage": "https://github.com/chloelski/landing-page#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1"
+  }
 }

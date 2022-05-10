@@ -11,20 +11,26 @@ $family-sans-serif: proximaNova;
 $primary : #FF9900;
 $light-border : #BCD0E5;
 
+.main {
+    padding-left: 145px;
+    padding-right: 145px;
+    padding-top: 20px;
+}
+
+
 // Navigation
 .navbar {
     height: 78px;
     margin-top: 20px;
 
     .navbar-brand{
-        margin-left: 145px;
+    
         .navbar-item{
             padding: 0;
         }
     }
 
     .navbar-end{
-        margin-right: 145px;
         display:flex;
   justify-content: flex-end;
     }
@@ -35,10 +41,72 @@ $light-border : #BCD0E5;
     border: 1px solid $light-border;
 }
 
+// Header
+.button.is-negative {
+    background-color: white;
+    color: $primary;
+}
+
+section.banner {  
+    padding-top: 30px; 
+    .banner-content{
+        max-width: 518px;
+
+        .title {
+            font-weight: 500;
+            font-size: 2.7rem;
+        }
+
+        .description {
+            font-size: 1.2rem;
+        }
+    }
+
+     .banner-content-actions {
+         padding-top: 45px;
+         font-size: 2.7rem;
+         
+         button {
+             min-height: 53px;
+             width: 150px;
+         }
+
+         .button.is-negative{
+             border: none;
+         }
+     }
+
+ }
+
+ // Header desktop 
+
+ @media screen and (min-width: 769px) {
+    section.banner{
+        display: flex;
+        align-items: center;
+        height: 496px;
+    }
+}
+
+// Feature section 
+
+.feature {
+   
+}
+
+// Feature desktop 
+@media screen and (min-width: 769px) {
+    section.feature{
+       
+    }
+}
+
+   
 
 
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/utilities/mixins.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
@@ -47,3 +115,4 @@ $light-border : #BCD0E5;
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";

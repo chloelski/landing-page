@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My custom Bulma website</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" 
+          href=
+"assets/font-awesome/FontAwesome.otf">
   </head>
   <body>
-      <!-- Navigation componennt -->
+    <div class="main">
+      <!-- Navigation component -->
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="#">
@@ -51,5 +55,74 @@
         </div>
       </nav>
       <!-- End of navigation component -->
+      <!-- Header component -->
+      <section class="banner columns">
+       <div class="banner-content column">
+        <h1 class="title"> The Design Thinking superpowers</h1>
+        <p class="description">Tools, tutorials, design and innovation experts, all in one place!
+          The most intuitive way to imagine your next user experience
+        </p>
+        <div class="banner-content-actions">
+          <button class="button is-primary">Get started</button>
+          <button class="button is-negative"><span class="icon">
+            <i class="fa-solid fa-play"></i>
+          </span>Watch the video</button>
+        </div>
+       </div> 
+       <div class="banner-img column">
+        <img src="assets/img/header/banner-img.png">
+       </div>
+      </section>
+      <!-- End of header component -->
+      <!--Feature component-->
+      <section class="feature">
+        <h2 class="title">We design tools to unveil your superpowers</h2>
+          <ul class="cards columns">
+            <li class="column">
+              <span class="icon">
+                <svg width="111px" height="85px" viewBox="0 0 111 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>icon</title>
+                  <defs>
+                      <filter x="-60.0%" y="-120.0%" width="220.0%" height="340.0%" filterUnits="objectBoundingBox" id="filter-1">
+                          <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+                      </filter>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="01-Productly" transform="translate(-131.000000, -891.000000)">
+                          <g id="03-Feature" transform="translate(-406.000000, 734.000000)">
+                              <g id="icon" transform="translate(567.000000, 162.000000)">
+                                  <rect id="Shadow" fill="#7752BE" opacity="0.848005022" filter="url(#filter-1)" x="0.5" y="25" width="50" height="25" rx="12.5"></rect>
+                                  <rect id="icon-bd" fill="#7752BE" x="0" y="0" width="50" height="50" rx="19"></rect>
+                                  <text id="" font-family="FontAwesome" font-size="16" font-weight="normal" fill="#FFFFFF">
+                                      <tspan x="19" y="31"></tspan>
+                                  </text>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+              </span>
+              <h3>First click tests</h3>
+              <p>While most people enjoy casino gambling</p>
+            </li>
+            <li class="column">
+              <span class="icon"></span>
+              <h3>Design surveys</h3>
+              <p>Sports betting, lottery and bingo playing for the fun</p>
+            </li>
+            <li class="column">
+              <span class="icon"></span>
+              <h3>Preference tests</h3>
+              <p>The Myspace page defines the individual</p>
+            </li>
+            <li class="column">
+              <span class="icon"></span>
+              <h3>Five second tests</h3>
+              <p>Personal choices and the overall personality of the person</p>
+            </li>
+          </ul>
+      </section>
+      <!-- End of feature component -->
+      </div>
   </body>
 </html>
