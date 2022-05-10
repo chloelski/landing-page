@@ -1,2 +1,49 @@
 @charset "utf-8";
-@import "../node_modules/bulma/bulma.sass";
+
+// Font family
+$family-sans-serif: proximaNova;
+@font-face {
+    font-family: proximaNova;
+    src: url(../assets/fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf);
+  };
+
+// Colors 
+$primary : #FF9900;
+$light-border : #BCD0E5;
+
+// Navigation
+.navbar {
+    height: 78px;
+    margin-top: 20px;
+
+    .navbar-brand{
+        margin-left: 145px;
+        .navbar-item{
+            padding: 0;
+        }
+    }
+
+    .navbar-end{
+        margin-right: 145px;
+        display:flex;
+  justify-content: flex-end;
+    }
+
+
+}
+.buttons .light{
+    border: 1px solid $light-border;
+}
+
+
+
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
