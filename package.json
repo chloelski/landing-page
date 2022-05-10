@@ -1,0 +1,25 @@
+{
+  "name": "landing-page",
+  "description": "From a sketch design to a real live landing-page! :)",
+  "version": "1.0.0",
+  "main": "sass/styles.scss",
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chloelski/landing-page.git"
+  },
+  "author": "Chloé Lewandowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chloelski/landing-page/issues"
+  },
+  "homepage": "https://github.com/chloelski/landing-page#readme"
+}
